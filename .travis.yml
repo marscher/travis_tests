@@ -1,0 +1,11 @@
+language: python
+
+python:
+-2.7
+
+before_install:
+#- sudo apt-get update -qq
+
+script:
+  pip install JPype1
+  python -c "import jpype; jpype.startJVM(jpype.getDefaultJVMPath())"
