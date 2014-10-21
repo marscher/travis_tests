@@ -1,8 +1,7 @@
 language: objective-c
 
 before_install:
-- sudo apt-get update -qq
-
+ - python -v
 script:
  - pip install JPype1
  - python -c "import jpype; jpype.startJVM(jpype.getDefaultJVMPath())"
