@@ -3,5 +3,5 @@ language: objective-c
 before_install:
  - python -v
 script:
- - pip install JPype1
+ - pip install JPype1 --user
  - python -c "import jpype; jpype.startJVM(jpype.getDefaultJVMPath())"
