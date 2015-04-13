@@ -1,7 +1,5 @@
 #language: objective-c
 language: python
 
-before_install:
- - python -v
 script:
   echo $PATH
